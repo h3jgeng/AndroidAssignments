@@ -12,6 +12,7 @@
         android:text="@string/login_textView"/>
 
     <EditText
+        android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/login_name"
@@ -29,6 +30,15 @@
         android:inputType="textPassword"
         android:importantForAutofill="no"
         tools:ignore="LabelFor" />
+    
+    <Button
+        android:id ="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_textView"
+        android:onClick="loginClicked" />
+
+
 
 
 </LinearLayout>

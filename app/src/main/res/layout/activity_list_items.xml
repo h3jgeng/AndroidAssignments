@@ -17,13 +17,15 @@
         android:layout_gravity="fill"/>
 
     <CheckBox
+        android:id="@+id/logoutCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/check_box"
         android:layout_columnWeight="1"
-        android:layout_gravity="fill"/>
+        android:layout_gravity="fill" />
 
     <Switch
+        android:id="@+id/onOffSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/switch_message"

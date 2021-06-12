@@ -9,4 +9,14 @@
     <string name="radio_button">广播按钮</string>
     <string name="check_box">复选框</string>
     <string name="switch_message">这是用来干什么的?</string>
+    <string name="dialog_message">你想退出嗎?</string>
+    <string name="dialog_title">退出</string>
+    <string name="action_oK">好的</string>
+    <string name="action_cancel">取消</string>
+    <string name="infoToShare">通過列表表格: 這是我的分享信息</string>
+    <string name="switch_on">開</string>
+    <string name="switch_off">関</string>
+    <string name="preference_name">偏好設定</string>
+    <string name="email_key">鍵</string>
+
 </resources>

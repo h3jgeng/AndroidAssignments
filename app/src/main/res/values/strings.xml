@@ -8,4 +8,15 @@
     <string name="radio_button">RadioButton</string>
     <string name="check_box">CheckBox</string>
     <string name="switch_message">What does this do?</string>
+    <string name="dialog_message">Do you want to go back?</string>
+    <string name="dialog_title">Exit</string>
+    <string name="action_oK">OK</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="infoToShare">ListItemsActivity passed: My information to share</string>
+    <string name="switch_on">Switch is On</string>
+    <string name="switch_off">Switch is Off</string>
+    <string name="preference_name">my_preference</string>
+    <string name="email_key">email_key</string>
+
+
 </resources>
