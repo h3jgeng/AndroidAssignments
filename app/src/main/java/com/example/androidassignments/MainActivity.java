@@ -1,12 +1,12 @@
 package com.example.androidassignments;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +20,13 @@ public class MainActivity extends AppCompatActivity {
 
         Button showListItemsBtn = findViewById(R.id.button);
         showListItemsBtn.setOnClickListener(view -> startActivityForResult(new Intent(MainActivity.this, ListItemsActivity.class), 10));
+
+        Button startChartBtn = findViewById(R.id.button2);
+        startChartBtn.setOnClickListener(v -> {
+            Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+            Intent myIntent = new Intent(MainActivity.this, ChatWindow.class);
+            startActivity(myIntent);
+        });
     }
 
     @Override
