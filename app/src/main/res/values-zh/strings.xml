@@ -22,4 +22,19 @@
     <string name="send_message">发送</string>>
     <string name="new_text">新信息</string>
 
+    <string name="Start_Toolbar">测试工具栏</string>
+    <string name="about_message">版本1.0,作者耿华翼</string>
+    <string name="action_one_message">你选择了第一栏</string>
+    <string name="new_message">新消息</string>
+
+    <string name="title_activity_test_toolbar">测试工具栏</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">第一个部分</string>
+    <string name="second_fragment_label">第二个部分</string>
+    <string name="next">下一个</string>
+    <string name="previous">上一个</string>
+
+    <string name="hello_first_fragment">你好第一个部分</string>
+    <string name="hello_second_fragment">你好第二个部分</string>
+
 </resources>
