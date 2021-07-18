@@ -20,28 +20,41 @@ import java.util.ArrayList;
 
 public class ChatWindow extends AppCompatActivity {
 
-    private static final ArrayList<String> chatMessages = new ArrayList<>();
+    private static ArrayList<String> chatMessages = new ArrayList<>();
+    private MessageItemDataSource datasource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_window);
 
+        // 1. call to create database
+        datasource = new MessageItemDataSource(this);
+
+        // 2. open Database for writing
+
+        datasource.open();
+
+        //3. list all the items in table on the main screen
+
+        chatMessages = datasource.getAllMessage();
+
         ListView chatListView = findViewById(R.id.chatView);
         EditText myEditText = findViewById(R.id.edit_text);
         Button sendBtn = findViewById(R.id.send_btn);
         ChatAdapter messageAdapter = new ChatAdapter(this);
-        chatListView.setAdapter(messageAdapter);
 
         sendBtn.setOnClickListener(v -> {
             chatMessages.add(myEditText.getText().toString());
             messageAdapter.notifyDataSetChanged();
+            datasource.addMessage(myEditText.getText().toString());
             myEditText.setText("");
         });
 
-
-
+        chatListView.setAdapter(messageAdapter);
     }
+
+
 
     private class ChatAdapter extends ArrayAdapter<String> {
 
@@ -77,4 +90,11 @@ public class ChatWindow extends AppCompatActivity {
             return result;
         }
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        datasource.close();
+    }
+
 }
