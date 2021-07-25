@@ -33,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
             Intent myIntent = new Intent(MainActivity.this, TestToolbar.class);
             startActivity(myIntent);
         });
+
+        Button starWeatherBtn = findViewById(R.id.button4);
+        starWeatherBtn.setOnClickListener(v -> {
+            Intent myIntent = new Intent(MainActivity.this, WeatherForecast.class);
+            startActivity(myIntent);
+        });
     }
 
     @Override

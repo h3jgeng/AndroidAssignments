@@ -34,7 +34,10 @@
     <string name="about_message">Version 1.0, by Huayi(Justin) Geng</string>
     <string name="action_one_message">You selected item 1</string>
     <string name="new_message">New Message</string>
-
+    <string name="weather_forecast">WeatherForecast</string>
+    <string name="current_temperature">Current Temperature</string>
+    <string name="min_temperature">Min Temperature</string>
+    <string name="max_temperature">Max Temperature</string>
 
 
 </resources>
